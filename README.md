@@ -1,16 +1,93 @@
-# React + Vite
+# 📰 NewsApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern news application built with **React**, **Vite**, and **NewsAPI** that allows users to browse the latest headlines across multiple categories with an infinite scrolling experience.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* 📰 Latest news headlines
+* 📂 Category-wise news browsing
 
-## React Compiler
+  * General
+  * Business
+  * Entertainment
+  * Health
+  * Science
+  * Sports
+  * Technology
+* ♾️ Infinite scrolling
+* ⚡ Loading progress bar
+* 📱 Responsive design
+* 🔄 Dynamic routing using React Router
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+* React
+* Vite
+* React Router DOM
+* Bootstrap
+* React Infinite Scroll Component
+* React Top Loading Bar
+* NewsAPI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Project Structure
+
+```text
+src/
+├── assets/
+├── components/
+│   ├── NavBar.jsx
+│   ├── News.jsx
+│   ├── NewsItem.jsx
+│   └── Spinner.jsx
+├── App.jsx
+├── App.css
+├── main.jsx
+└── index.css
+```
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/amahi1568/newsapp.git
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd newsapp
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Create an environment file
+
+Create a `.env` file in the root directory and add:
+
+```env
+VITE_NEWS_API_KEY=your_newsapi_key
+```
+
+### 5. Start the development server
+
+```bash
+npm run dev
+```
+
+The application will run on:
+
+```text
+http://localhost:5173
+```
+
+## 🔑 Environment Variables
+
+| Variable            | Description          |
+| ------------------- | -------------------- |
+| `VITE_NEWS_API_KEY` | Your NewsAPI API key |
+
